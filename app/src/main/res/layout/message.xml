@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/myLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/myImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/host"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/myMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="300dp"
+                android:background="@drawable/message_box_host"
+                android:layout_toLeftOf="@id/myImg"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="28dp"
+                android:paddingLeft="26dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="15dp"
+                android:textSize="8pt"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/myTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/myMsg"
+                android:layout_alignBottom="@id/myMsg"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/otherLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/otherImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/client"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/otherUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/otherImg"
+                android:layout_marginLeft="10dp"
+                android:text="name"
+                android:textColor="@color/fui_linkColor"
+                android:textStyle="normal|bold"/>
+
+            <TextView
+                android:id="@+id/otherMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="300dp"
+                android:background="@drawable/message_box_client"
+                android:layout_toRightOf="@id/otherImg"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/otherUserName"
+                android:layout_marginTop="10dp"
+                android:paddingRight="26dp"
+                android:paddingLeft="28dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="15dp"
+                android:textSize="8pt"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/otherTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/otherMsg"
+                android:layout_alignBottom="@id/otherMsg"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

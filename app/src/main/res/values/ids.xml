@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar2" type="id"></item>
+    <item name="recyclerView" type="id"></item>
+    <item name="send_msg" type="id"></item>
+    <item name="message_input" type="id"></item>
+    <item name="message_box" type="id"></item>
+</resources>
